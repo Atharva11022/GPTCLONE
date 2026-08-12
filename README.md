@@ -56,24 +56,3 @@ Open `http://localhost:5173` in your browser to view the app!
 
 ---
 
-## Step 3: Populate GitHub "About" Section
-
-On your GitHub repository page, click the ⚙️ **Gear Icon** next to **About** (on the right sidebar) and fill in:
-
-* **Description:**  
-  `A fast, responsive AI Image Generation app built with React 18, Vite, and Pollinations AI.`
-* **Topics / Tags (type and press Enter for each):**  
-  `react` `vite` `ai-image-generator` `pollinations-ai` `javascript` `css3` `frontend`
-
----
-
-## Step 4: Commit & Push the Fixes
-
-Run these final terminal commands:
-
-```bash
-git add README.md
-git commit -m "docs: truthmax README and update tech stack details"
-git push origin master
-
-```
