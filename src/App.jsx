@@ -16,14 +16,12 @@ function App() {
 
     setLoading(true);
 
-    // Modern Pollinations API endpoint
+    // Optimized parameters for fast server response
     const encodedPrompt = encodeURIComponent(prompt.trim());
     const randomSeed = Math.floor(Math.random() * 1000000);
-    const imageUrl = `https://image.pollinations.ai/prompt/${encodedPrompt}?width=1024&height=1024&seed=${randomSeed}&nologo=true`;
+    const imageUrl = `https://pollinations.ai/p/${encodedPrompt}?width=512&height=512&seed=${randomSeed}`;
 
     console.log("Generating URL:", imageUrl);
-
-    // Set URL directly to state so <img> renders immediately
     setResult(imageUrl);
   };
 
@@ -55,10 +53,9 @@ function App() {
             }}
             onError={() => {
               console.error("Image failed to load.");
-              alert("Image generation timed out or failed. Try clicking Generate again.");
+              alert("Server is busy. Click 'Generate Image' again!");
               setLoading(false);
             }}
-            style={{ maxWidth: '100%', height: 'auto', borderRadius: '8px' }}
           />
         </div>
       )}
