@@ -37,7 +37,7 @@ A fast, responsive React front-end application built with Vite that interfaces w
 
 ### 1. Clone Repository & Install Dependencies
 ```bash
-git clone [https://github.com/Atharva11022/GPTCLONE.git](https://github.com/Atharva11022/GPTCLONE.git)
+git clone https://github.com/Atharva11022/pixel-craft-ai.git
 cd GPTCLONE
 npm install
 
